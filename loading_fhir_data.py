@@ -8,7 +8,6 @@ import json
 from typing import List, Dict, Optional, Tuple
 import requests
 import time
-from constants import PHI_FIELDS, VALID_CODE_SYSTEMS
 from dateutil.parser import parse  
 import datetime
 import re

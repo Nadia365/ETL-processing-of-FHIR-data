@@ -21,7 +21,7 @@ class FHIREncoder(JSONEncoder):
 
 # Set up logging
 logging.basicConfig(
-    filename="data_pipeline_HRV.log",
+    filename="data_pipeline.log",
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
 )

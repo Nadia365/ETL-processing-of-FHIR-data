@@ -11,12 +11,9 @@ import time
 from dateutil.parser import parse  
 import datetime
 import re
-from json import JSONEncoder
-#For very large datasets, you might want to use json.dump() with a custom encoder or stream the output:
-class FHIREncoder(JSONEncoder):
-    def default(self, obj):
-        # Handle special FHIR types if needed
-        return super().default(obj)
+
+
+
 
 # Set up logging
 logging.basicConfig(

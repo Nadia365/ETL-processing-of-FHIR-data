@@ -1,5 +1,3 @@
-# ETL-processing-of-FHIR-data
-Extract, Transform, Load (ETL) processes are critical for preparing Fast Healthcare Interoperability Resources (FHIR) data for AI and analytics
 FHIR Data Pipeline for HRV Analysis
 This project is a Python-based pipeline for interacting with a FHIR (Fast Healthcare Interoperability Resources) server to fetch, validate, process, and analyze healthcare data, specifically focusing on Heart Rate Variability (HRV) observations. The pipeline authenticates with a FHIR server, retrieves data for specified resource types (e.g., Patient, Observation), validates the data, generates exploration reports, processes it into a machine learning-ready table, and creates interactive biosignal visualizations.
 Features
@@ -35,6 +33,7 @@ python-dotenv==1.0.0
 pandas==2.0.3
 requests==2.31.0
 
+Note: Additional dependencies (e.g., for fhir_preprocessor, visualization libraries) may be required based on the imported modules (load_data_FHIR, fhir_preprocessor). Ensure these are installed or provided.
 
 Configure Environment Variables:Create a var.env file in the project root with the following variables:
 FHIR_SERVER_URL=https://<your-fhir-server>.fhir.azurehealthcareapis.com
@@ -135,3 +134,7 @@ Implement chunked processing for large datasets to reduce memory usage.
 Enhance validation to include specific checks for HRV data integrity.
 Add unit tests for critical functions (e.g., fetch_fhir_data, process_fhir_bundle).
 
+License
+This project is licensed under the MIT License. See the LICENSE file for details (if applicable).
+Contact
+For questions or contributions, please contact the project maintainer or open an issue in the repository.

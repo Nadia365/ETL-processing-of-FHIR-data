@@ -1,3 +1,7 @@
+import os 
+import pandas as pd
+
+
 def visualize_biosignals_interactive(
     observations: List[Dict[str, Any]], output_dir: str = "fhir_analysis"
 ) -> None:

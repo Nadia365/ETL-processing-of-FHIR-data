@@ -1,7 +1,7 @@
 # HRV Data Preprocessing Report
 
 ## Overview  
-This report summarizes the preprocessing and analysis of **Heart Rate Variability (HRV) data** extracted from a synthetic FHIR dataset. The dataset contains **1000 observations** for a single patient (`8b629ed7-c0a7-4a67-b908-c54d87a2ab22`), with timestamps ranging from **2025-02-28T04:50:00Z to 2025-02-28T21:29:00Z**. The preprocessing pipeline addresses data quality issues such as missing values, duplicates, timestamp normalization, outliers, and resampling, preparing the data for machine learning applications.
+This report summarizes the preprocessing and analysis of **Heart Rate Variability (HRV) data** generated synthetically. The dataset contains **1000 observations** for a single patient (`8b629ed7-c0a7-4a67-b908-c54d87a2ab22`), with timestamps ranging from **2025-02-28T04:50:00Z to 2025-02-28T21:29:00Z**. The preprocessing pipeline addresses data quality issues such as missing values, duplicates, timestamp normalization, outliers, and resampling, preparing the data for machine learning applications.
 
 ---
 
@@ -142,7 +142,7 @@ The dataset underwent a structured preprocessing pipeline to ensure data quality
 ### **Figure Interpretations**
 #### **1. HRV Values Over Time (Raw)**
 
-![Raw HRV values over time](data/hrv_plot_step1_initial_patient_2d5e3d42-3023-49c6-9ba7-25b4663e1cc0)
+![Raw HRV values over time](data/hrv_plot_step1_initial_patient_2d5e3d42-3023-49c6-9ba7-25b4663e1cc0.png)
 - **Observation**:  
   - ~1000 dense points (20-100ms range)  
   - X-axis obscured by overplotting  
@@ -151,7 +151,7 @@ The dataset underwent a structured preprocessing pipeline to ensure data quality
   - Demonstrates need for resampling
 
 #### **2. HRV Values Over Time (Processed)**
-![Preprocessed HRV values over time](data/hrv_plot_step7_final_patient_2d5e3d42-3023-49c6-9ba7-25b4663e1cc0)
+![Preprocessed HRV values over time](data/hrv_plot_step7_final_patient_2d5e3d42-3023-49c6-9ba7-25b4663e1cc0.png)
 - **Observation**:  
   - ~200 smoothed points (40-80ms range)  
   - Connected lines may misrepresent discreteness  
@@ -160,7 +160,7 @@ The dataset underwent a structured preprocessing pipeline to ensure data quality
   - Suggest using `plt.scatter()` instead
 
 #### **3. HRV Distribution**
-![Distribution HRV values](data/df_description_hrv_histogram)
+![Distribution HRV values](data/df_description_hrv_histogram.png)
 
 - **Observation**:  
   - Uniform spread with peaks at 50-60ms/80-90ms  

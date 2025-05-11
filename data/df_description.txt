@@ -1,0 +1,45 @@
+=== DataFrame Info ===
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 1000 entries, 0 to 999
+Data columns (total 3 columns):
+ #   Column      Non-Null Count  Dtype  
+---  ------      --------------  -----  
+ 0   patient_id  1000 non-null   object 
+ 1   hrv_value   694 non-null    float64
+ 2   timestamp   1000 non-null   object 
+dtypes: float64(1), object(2)
+memory usage: 23.6+ KB
+
+
+
+=== Statistical Summary ===
+                                  patient_id   hrv_value             timestamp
+count                                   1000  694.000000                  1000
+unique                                     1         NaN                  1000
+top     8b629ed7-c0a7-4a67-b908-c54d87a2ab22         NaN  2025-02-28T04:50:00Z
+freq                                    1000         NaN                     1
+mean                                     NaN   60.068242                   NaN
+std                                      NaN   22.521546                   NaN
+min                                      NaN   20.134279                   NaN
+25%                                      NaN   41.539876                   NaN
+50%                                      NaN   59.445289                   NaN
+75%                                      NaN   77.888591                   NaN
+max                                      NaN   99.985689                   NaN
+
+
+=== Missing Values ===
+patient_id      0
+hrv_value     306
+timestamp       0
+
+
+=== Unique Values ===
+patient_id       1
+hrv_value      694
+timestamp     1000
+
+
+=== Timestamp Range ===
+Min Timestamp: 2025-02-28T04:50:00Z
+Max Timestamp: 2025-02-28T21:29:00Z
+
